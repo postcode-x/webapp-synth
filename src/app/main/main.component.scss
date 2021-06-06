@@ -1,0 +1,133 @@
+hr {
+  border-top: 1px solid gray;
+  opacity: 0.46;
+}
+
+.style-two {
+  border: 0;
+  height: 2px;
+  width: 60%;
+  background-image: linear-gradient(90deg,#efa8b0,#a89cc8,#8cc9f0);
+}
+
+@media (max-width: 767px) {
+  .navbar{
+      display:none;
+  }
+}
+
+.btn-sample {
+  color: #FFFFFF;
+  background-color: #5C71A7;
+  border-color: #5C71A7;
+}
+
+.btn-sample:hover,
+.btn-sample:focus,
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+  color: #FFFFFF;
+  background-color: #403C82;
+  border-color: #5C71A7;
+}
+
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+  background-image: none;
+}
+
+.btn-sample.disabled,
+.btn-sample[disabled],
+fieldset[disabled] .btn-sample,
+.btn-sample.disabled:hover,
+.btn-sample[disabled]:hover,
+fieldset[disabled] .btn-sample:hover,
+.btn-sample.disabled:focus,
+.btn-sample[disabled]:focus,
+fieldset[disabled] .btn-sample:focus,
+.btn-sample.disabled:active,
+.btn-sample[disabled]:active,
+fieldset[disabled] .btn-sample:active,
+.btn-sample.disabled.active,
+.btn-sample[disabled].active,
+fieldset[disabled] .btn-sample.active {
+  background-color: #5C71A7;
+  border-color: #5C71A7;
+}
+
+.btn-sample .badge {
+  color: #5C71A7;
+  background-color: #FFFFFF;
+}
+
+// Teclado
+$keyboard_Width:  96vw;
+$keyboard_Height: ($keyboard_Width * 0.18  );
+$border_Width:    ($keyboard_Width * 0.0015);
+$whiteKey_Count:  21;
+$whiteKey_Height: $keyboard_Height;
+$whiteKey_Width:  ($keyboard_Width / $whiteKey_Count);
+$blackKey_Height: ($whiteKey_Height * 0.55);
+$blackKey_Width:  ($whiteKey_Width  * 0.55);
+$blackKey_Offset: (-($blackKey_Width / 2) - $border_Width);
+
+$whiteKey_Color:       #efefef;
+$blackKey_Color:       #222222;
+$blackKey_BorderColor: #000000;
+$whiteKey_BorderColor: #AAAAAA;
+
+.key{
+	float:    left;
+	position: relative;
+}
+
+.white{
+	height:           $whiteKey_Height;
+	width:            $whiteKey_Width;
+	z-index:          1;
+	border-top:       $border_Width solid $whiteKey_BorderColor;
+	border-bottom:    $border_Width solid $whiteKey_BorderColor;
+	border-left:      $border_Width solid $whiteKey_BorderColor;
+	background-color: $whiteKey_Color;
+  border-radius: 3%;
+
+  &:hover{
+    background: #B2BD7E;
+    cursor: pointer;
+  }
+
+  &:active{
+    background: #6A5D7B;
+    cursor: pointer;
+  }
+}
+
+.black{
+	height:           $blackKey_Height;
+	width:            $blackKey_Width;
+	z-index:          2;
+	border:           $border_Width solid $blackKey_BorderColor;
+	background-color: $blackKey_Color;
+  border-radius: 7%;
+
+  &:hover{
+    background: #B2BD7E;
+    cursor: pointer;
+  }
+
+  &:active{
+    background: #6A5D7B;
+    cursor: pointer;
+  }
+}
+
+.a, .b, .d, .e, .g, .black{
+	margin: 0 0 0 $blackKey_Offset;
+}
+
+#keyboard > .key:last-child{
+	border-right: $border_Width solid $whiteKey_BorderColor;
+}
+
