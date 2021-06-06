@@ -1,5 +1,11 @@
 # WebappSynth
 
+Código completo del tutorial para crear una Web App usando Angular, Tone.js y Bootstrap.
+
+[Primera parte](https://postcode-x.web.app/posts/crear-web-app-usando-angular-tonejs-bootstrap-primera-parte/)
+
+[Segunda parte](https://postcode-x.web.app/posts/crear-web-app-usando-angular-tonejs-bootstrap-segunda-parte/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 ## Development server
