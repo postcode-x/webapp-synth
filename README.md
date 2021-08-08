@@ -1,6 +1,6 @@
 # WebappSynth
 
-[Ir al sitio web](https://webapp-spotify.web.app/)
+[Ir al sitio web](https://webapp-synth.web.app/)
 
 Código completo del tutorial para crear una Web App Musical usando Angular, Tone.js y Bootstrap.
 
